@@ -1,0 +1,519 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1140px !important;
+}
+
+.body{
+    font-family: 'Open Sans', sans-serif;
+}
+.orangecolor{
+    color: #fe5c24;
+}
+/* ...............header........section start..........  */
+
+.topbar{
+    background-color: #eaefff;
+    padding: 16px 0;
+}
+
+.book-now{
+    padding: 14px 28px;
+    font-size: 16px;
+    background-color: #fe5c24 ;
+    border: none;
+    transition: .5s;
+    color: white;
+
+}
+.book-now:hover{
+    background-color: #2493e0;
+    transition: .5s;
+    color: white;
+}
+.nav-link{
+    transition: .3s;
+    
+}
+.nav-link:hover{
+    transition: .3s;
+    transform: scale(1.1);
+    color: #fe5c24 !important;
+} 
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.nav-link {
+    color: #0e477d !important;
+}
+.dropdown-item{
+    color: #0c3e72;
+}
+
+/* ...........banner section start  */
+
+.banner{
+    width: 100%;
+    background: url(../image/banner.png) no-repeat center;
+    height: 100vh;
+}
+.banner-text{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.banner-text h1{
+    font-size: 120px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 38px;
+}
+.banner-text p{
+    font-size: 24px;
+    color: #fff;
+}
+.banner-text button{
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color:  #2493e0;;
+    border: none;
+    transition: .5s;
+    color: white;
+    margin-top: 60px;
+    padding: 20px 79px;
+}
+.banner-text button:hover{
+    background-color:#fe5c24;
+    transition: .5s;
+    color: white;
+}
+
+/* search section start  */
+
+.search{
+    margin-top: -149px;
+}
+.search-bar{
+    padding: 48px 10px 47px 43px;
+}
+.search-item{
+    background: white;
+    
+}
+.search-item ul li{
+    display: inline-block;
+    padding: 45px 10px 32px 39px;
+    position: relative;
+    cursor: pointer;
+}
+.search-manu{
+    padding: 40px;
+    box-shadow: 0 10px 40px 0 rgb(221 221 221 / 30%);
+    border-color: #0e477d;
+
+}
+.icon{
+    position: relative;
+}
+.icon i{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 20px;
+}
+
+.line{
+    width: 75%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+}
+
+/* ......search section end .....  */
+
+/* tv section start   */
+.tv-section{
+    padding: 108px 0;
+}
+ .tv h1{
+    font-size: 46px;
+    color: #0c3e72;
+    font-weight: 600; 
+    margin-bottom: 26px;
+}
+.tv p {
+    color: #777;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+.place-list{
+    position: relative;
+}
+
+.place-item{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    opacity: 0;
+    transition: .6s;
+}
+
+.place-item h3{
+    margin-top: 20px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.place-item p{
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.place-list::before{
+    position: absolute;
+    content: '';
+    background-color: #0c3e72;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: .6s;
+}
+.place-list:hover::before{
+    opacity: .75;
+    transition: .6s;
+}
+.place-list:hover .place-item{
+    opacity: 1;
+    transition: .6s;
+    transform:translateY(-20px);
+}
+
+.tv-section-btn{
+    margin-top: 57px;
+}
+
+/* tv section end  */
+/* evant section start  */
+
+.evant{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/evants.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.text{
+    margin:155px -52px 18px -10px;
+    background-color: white;
+    padding: 50px;
+}
+.text h5{
+    color: #fe5c24;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+.text h2{
+    font-size: 38px;
+    line-height: 28px;
+    color: #0c3e72;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.text p{
+    color: #a2a2a2;
+    font-family: "Open Sans",sans-serif;
+    padding-top: 10px;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.text p span{
+    color: #0c3e72;
+    padding-top: 10px;
+    /* font-weight: 100; */
+}
+.text p span i{
+    color: #ffc962;
+}
+.text button{
+    margin-top: 20px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    color: #fe5c24 !important;
+    border-radius: 100%;
+    padding: 35px;
+    background-color: #bfbbbb;
+    opacity: 0.8;
+    
+}
+.carousel-control-prev {
+    left: 100px;
+}
+.carousel-control-next {
+    right: 100px;
+}
+
+/* evant section end  */
+
+/* booking section start  */
+
+.booking{
+    width: 100%;
+    padding: 130px 0;
+}
+.booking-topbar h2{
+    margin-top: 32px;
+    font-weight: 400;
+    color: #0e477d;
+}
+.booking-topbar p{
+    margin-top: 17px;
+    font-weight: 400;
+    color: #777;
+}
+.booking-topbar span{
+    margin-top: 32px;
+    font-weight: 300;
+}
+.booking-topbar span i{
+    color: #ffc962;
+    font-size: 15px;
+}
+
+.underline{
+    margin-top: 60px;
+    width: 100%;
+    height: 1px;
+    background-color: #0c3e72;
+    opacity: .2;
+}
+
+/* booking section end */
+
+
+/* about section start  */
+
+.about{
+    width: 100%;
+    background-color: #0c3e72;
+    padding: 130px 0px;
+}
+.about-text p{
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 400;
+
+}
+.about-text{
+    background-color: #0e477d;
+    padding: 30px;
+}
+.about-section h1{
+    color: white;
+    font-size: 46px;
+    
+    line-height: 3.4;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 26px;
+}
+.about-text span i{
+    padding: 10px 0;
+    color: #ffc962;
+}
+.about-text p{
+    padding: 20px 0;
+}
+.about-text h5{
+    padding: 11px 0;
+    color: white
+}
+
+/* about section end  */
+
+/* hotals section start here  */
+.hotals{
+    width: 100%;
+    padding-bottom: 130px;
+    padding-top: 100px;
+}
+
+.hotal-lists img{
+    margin-bottom: 32px;
+}
+
+.hotal-lists h4{
+    font-size: 24px;
+    color: #0c3e72;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.hotal-lists p{
+    color: #a2a2a2;
+    font-family: "Open Sans",sans-serif;
+    line-height: 10px;
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.hotal-section h1{
+    font-size: 46px;
+    color: #0c3e72;
+    font-weight: 600; 
+    margin-bottom: 26px;
+    
+}
+
+.hotal-section p{
+    color: #777;
+    font-weight: 400;
+    margin-bottom: 38px;
+}
+/* hotals section end here  */
+
+
+/* footer section start  */
+
+.footer{
+    background-color: #162b45;
+    padding: 130px 0 0;
+    color: white;
+}
+.footer{
+    width: 100%;
+}
+.f-items ul li{
+    list-style: none;
+}
+.footer-contant h6{
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-left{
+    margin-right: 70px;
+    font-size: 16px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.footer-left ul li{
+    transition: .3s;
+}
+.footer-left ul li:hover{
+    color: #fe5c24;
+    transition: .3s;
+}
+.footer-right ul li{
+    transition: .3s;
+}
+.footer-right ul li:hover{
+    color: #fe5c24;
+    transition: .3s;
+}
+.footer-right{
+    font-size: 16px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.footer-contant{
+    margin-bottom: 150px;
+}
+
+.f2{
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.input input{
+    height: 50px;
+    border: none;
+    width: 80%!important;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 13px;
+    color: #999;
+    background-color: #092742;
+    border: 0 solid transparent;
+}
+.input{
+    position: relative;
+    margin-bottom: 30px;
+}
+.input button {
+    background-color: #fe5c24;
+    color: #fff;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 15px 20px;
+
+    border: 0;
+    font-size: 12px;
+    font-weight: 400;
+   position: absolute;
+    right: 71px;
+}
+.f-cont p{
+    color: #fff;
+    line-height: 1.8;
+}
+
+.f-cont2{
+    margin-top: 65px;
+}
+
+.f-cont2 i{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.ff{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.footer2{
+    padding: 30px 0;
+    background-color: #08223a;
+    color: #777;
+}
+
+/* footer section end  */
